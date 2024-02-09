@@ -108,7 +108,8 @@ jobs:
         with:
           name: Maven
           path: ~/releases
-    publish:
+
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -127,3 +128,4 @@ jobs:
           arguments: publish
         env:
           GITHUB_TOKEN: ${{ secrets.JAVA_TOKEN }}
+  
