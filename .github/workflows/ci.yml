@@ -108,7 +108,6 @@ jobs:
         with:
           name: Maven
           path: ~/releases
-  jobs:
   publish:
     runs-on: ubuntu-latest 
     permissions: 
